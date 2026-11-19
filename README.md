@@ -94,8 +94,9 @@ Over the course of this session, participants explore two complementary approach
 
 #### 🖼️ Evidence
 
-![PDF3 Password Cracked](pdf3-cracked.png)
-
+![PDF3 Password Cracked](pass1.png)
+![PDF3 Password Cracked](pass2.png)
+![PDF3 Password Cracked](final3.png)
 ---
 
 
@@ -103,9 +104,54 @@ Over the course of this session, participants explore two complementary approach
 
 
 
+## 🌐 W3-PM2: Password Cracking with NW Tools
+
+Building on the previous session, this lab shifts focus to **network-based password attack tools** — utilities used to test authentication mechanisms over live network services (such as SSH, FTP, or web logins) rather than static hash files. Participants explore how these tools attempt credential guessing against network services, the role of rate-limiting and account lockout as defenses, and how security teams use these same tools defensively to audit their own infrastructure for weak or default credentials.
+
+---
+
+## 📊 Summary of Results
+
+| 📄 File | 🛠️ Tool | 🔑 Password Recovered | ⚠️ Weakness Type |
+|---|---|---|---|
+| My Locked PDF1 | John the Ripper (Johnny) | `good-luck` | Dictionary word |
+| My Locked PDF2 | John the Ripper (Johnny) | `password1` | Top common password |
+| My Locked PDF3 | John the Ripper (Johnny) | `1qaz2wsx` | Keyboard-walk pattern |
+
+---
+
+## 💡 Recommendations
+
+All three passwords in this exercise were cracked almost instantly using a basic dictionary attack, which highlights common, preventable weaknesses in password selection. Based on these findings, the following practices are recommended:
+
+- 🔒 **Enforce strong password policies** — require a minimum length of 12+ characters with a mix of uppercase, lowercase, numbers, and special characters.
+- 🚫 **Avoid dictionary words and common substitutions** — words like `good-luck` or `password1` are among the first guesses in any wordlist-based attack.
+- ⌨️ **Avoid keyboard-walk patterns** — sequences such as `1qaz2wsx` look complex but are well known to attackers and included in most modern wordlists.
+- 📝 **Use passphrases instead of passwords** — a long, random phrase is both easier to remember and far harder to crack than a short complex string.
+- 🔐 **Enable multi-factor authentication (MFA)** wherever possible, so a compromised password alone is not sufficient for access.
+- 🛡️ **Use strong, modern encryption** for sensitive documents, and avoid relying on password protection as the sole security control for confidential files.
+
+---
 
 
+## 👤 Author
 
+**Abdikani Mohamud Jeite**
+🎓 Cybersecurity Student | Batch: **B084**
+🔗 LinkedIn: [https://lnkd.in/p/e3EbixuM]
+
+---
+
+## 📌 Project Information
+
+| 🏷️ Field | 📋 Details |
+|---|---|
+| 🏫 **Program** | Cybersecurity Training Program – NetworkWalks |
+| 📅 **Week** | 03 |
+| 🧪 **Practical Topics** | John the Ripper (JTR) and NetworkWalks Tools, using authorized files and controlled lab environments for password security testing |
+| 📂 **Repository** | 🔗 [View on GitHub](https://github.com/jeeyte88/Networkwalks-B084-Week3-Password-Cracking-with-JTR/edit/main/README.md) |
+
+---
 
 
 
