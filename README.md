@@ -52,7 +52,31 @@ Over the course of this session, participants explore two complementary approach
 
 #### 🖼️ Evidence / Screenshot
 
-![PDF1 Cracked Password]()
+![Password Cracked](goodluck1.png)
+
+
+![Password Cracked](enter pass1.png)
+
+![Password Cracked](congrats1.png)
+
+---
+
+
+### 📄 File: My Locked PDF2
+
+| 🏷️ Field | 📋 Details |
+|---|---|
+| 🎯 **Objective** | Recover the password protecting this PDF using John the Ripper (via the Johnny GUI) |
+| 🛠️ **Tool Used** | Johnny (GUI for John the Ripper) |
+| ⚙️ **Method** | 1️⃣ Extracted the password hash from the PDF via `pdf2john.pl`, producing a `$pdf$...` formatted hash <br> 2️⃣ Loaded the hash into Johnny <br> 3️⃣ Ran a dictionary-based password-cracking attack against the hash |
+| 🔢 **Hash Format** | `$pdf$4*4*128*-102...` (PDF format) |
+| ✅ **Result** | **Cracked** — password recovered: `password1` |
+| 📊 **Status** | 100% (1/1 cracked, 0 left) |
+| 🔍 **Observations** | An extremely common/weak password found near the top of most standard wordlists (e.g., `rockyou.txt`). One of the most frequently used passwords globally, demonstrating how trivial it is to crack when users don't follow password complexity guidelines. |
+
+#### 🖼️ Screenshot
+
+
 
 ---
 
