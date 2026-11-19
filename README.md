@@ -76,10 +76,27 @@ Over the course of this session, participants explore two complementary approach
 
 #### 🖼️ Screenshot
 
-
-
+![PDF2 - Step 1](pdf2%20%281%29.png)
+![PDF2 - Step 2](pdf2%20%282%29.png)
+![PDF2 - Step 3](pdf2%20%283%29.png)
 ---
 
+### 📄 File: My Locked PDF3
+
+| 🏷️ Field | 📋 Details |
+|---|---|
+| 🛠️ **Tool Used** | Johnny (GUI for John the Ripper) |
+| ⚙️ **Approach Taken** | The PDF's encryption hash was pulled out with `pdf2john.pl` and imported into Johnny, then subjected to a dictionary attack to recover the plaintext password. |
+| 🔢 **Hash Format** | `$pdf$4*4*128*-102...` (PDF format) |
+| ✅ **Outcome** | **Cracked** — the password was `1qaz2wsx` |
+| 📊 **Crack Status** | 100% (1/1 cracked, 0 left) |
+| 🔍 **Notes** | This password follows a common keyboard-pattern scheme (left-hand column sequence on a QWERTY keyboard), a pattern frequently seen in leaked password databases. While it looks more "complex" than `password1` at a glance, it's just as predictable to wordlists that include keyboard-walk patterns — showing that visual complexity doesn't always mean real strength. |
+
+#### 🖼️ Evidence
+
+![PDF3 Password Cracked](pdf3-cracked.png)
+
+---
 
 
 
